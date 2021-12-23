@@ -1,0 +1,214 @@
+html {
+   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   color: inherit;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+}
+
+ul {   
+   list-style-type: none;
+}
+
+
+
+/* Estilos reutilizables */
+
+/* .titulo {
+   color: purple;
+}
+
+li.titulo {
+   color: red;
+}
+
+li.titulo#quimica {
+   color: blue;
+}
+
+ul > .anidado {
+   color: turquoise;
+} */
+
+.container {
+   width: 95%;
+   margin: 10px auto;
+}
+
+.titulo {
+   text-align: center;
+
+   margin-bottom: 10px;
+}
+
+.separador {
+   border-color: purple;
+
+   margin: 20px 0;
+}
+
+
+
+/* Estilos específicos */
+
+.header {
+   display: flex;
+
+   align-items: center;
+   justify-content: space-between;
+
+   background-color: violet;
+
+   padding: 5px 15px;
+   /* padding: 1) arriba, 2) derecha, 3) abajo, 4) izquierda; */
+
+   margin-bottom: 20px;
+}
+
+.logo {
+   font-family: 'Poppins', sans-serif;
+}
+
+.barra-busqueda {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: white;
+
+   border-radius: 5px;
+
+   overflow: hidden;
+
+   border: 3px solid purple;
+}
+
+.barra-busqueda > input, .barra-busqueda > i {
+   height: 24px;
+}
+
+.barra-busqueda > input {
+   text-align: center;
+
+   border: none;
+}
+
+.barra-busqueda > i {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   color: purple;
+
+   width: 50px;
+
+   border-left: 1px solid purple;
+
+   transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+.barra-busqueda > i:hover {
+   background-color: purple;
+   color: white;
+
+   cursor: pointer;
+}
+
+.navegacion > .lista-navegacion {
+   display: flex;
+   column-gap: 10px;
+
+   font-size: 14px;
+}
+
+.bienvenida {
+   display: flex;
+   align-items: flex-start;
+   column-gap: 15px;
+}
+
+.bienvenida > img {
+   width: 200px;
+}
+
+.bienvenida > p {
+   text-align: justify;
+}
+
+.informacion {
+   display: flex;
+
+   column-gap: 20px;
+}
+
+.barra-lateral {
+   display: flex;
+   align-items: flex-start;
+
+   min-width: 200px;
+
+   position: relative;
+}
+
+.barra {
+   background-color: violet;
+
+   width: 100%;
+
+   padding: 10px 0;
+
+   border-radius: 5px;
+
+   position: sticky;
+   top: 0;
+}
+
+.barra > ul {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   row-gap: 10px;
+
+   color: purple;
+
+   font-weight: 500;
+}
+
+.principal {
+   display: flex;
+   flex-direction: column;
+}
+
+.contenido-principal {
+   display: flex;
+   flex-direction: column;
+
+   text-align: justify;
+}
+
+.apendice {
+   display: flex;
+   align-items: flex-start;
+
+   margin-top: 15px;
+
+   column-gap: 10px;
+}
+
+.apendice > p {
+   text-align: justify;
+}
+
+.apendice > img {
+   width: 50%;
+}
